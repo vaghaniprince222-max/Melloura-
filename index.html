@@ -1,1259 +1,630 @@
-<!DOCTYPE html>
-
+!DOCTYPE html>
 <html lang="en">
 
-
-
 <head>
-
   <meta charset="UTF-8" />
-
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Melloura - Premium Handcrafted Chocolates</title>
-
   <meta name="description"
-
     content="Melloura Chocolates crafts sensory indulgence through artisanal chocolates, blending European patisserie artistry with rich, warming flavors for gifting and special moments." />
 
-
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
   <link
-
     href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
-
     rel="stylesheet" />
-
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-
     rel="stylesheet" />
-
-
 
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
   <script>
-
     tailwind.config = {
-
       theme: {
-
         extend: {
-
           colors: {
-
             primary: '#25160e',
-
             'primary-container': '#3c2a21',
-
             secondary: '#885210',
-
             'secondary-container': '#fdb56c',
-
             tertiary: '#735c00',
-
             'tertiary-container': '#cca730',
-
             background: '#fdf9f6',
-
             surface: '#fdf9f6',
-
             'surface-container-low': '#f7f3f0',
-
             'surface-container': '#f1edea',
-
             'surface-container-high': '#ebe7e4',
-
             'surface-container-highest': '#e5e2df',
-
             'on-surface': '#1c1b1a',
-
             'on-surface-variant': '#4f4540',
-
             outline: '#81756f',
-
             'outline-variant': '#d3c3bd'
-
           },
-
           fontFamily: {
-
             serif: ['Playfair Display', 'Georgia', 'serif'],
-
             sans: ['Inter', 'system-ui', 'sans-serif']
-
           }
-
         }
-
       }
-
     }
-
   </script>
-
   <link rel="stylesheet" href="css/styles.css" />
-
 </head>
 
-
-
 <body data-page="home"
-
   class="bg-[#fdf9f6] text-[#1c1b1a] antialiased selection:bg-[#fdb56c] selection:text-[#25160e] pt-20 md:pt-24">
 
-
-
   <!-- Slim Sticky Header with Brand at EXACT CENTER -->
-
   <header id="site-header"
-
     class="fixed top-0 left-0 w-full z-40 bg-[#fdf9f6]/95 backdrop-blur-md border-b border-[#d3c3bd]/60 shadow-[0px_4px_20px_rgba(37,22,14,0.04)] transition-all duration-300">
-
   </header>
 
-
-
   <!-- Hero Section (Screenshot 4) -->
-
   <section class="relative w-full h-[580px] md:h-[680px] flex items-center justify-center overflow-hidden">
-
     <div class="absolute inset-0 z-0">
-
       <div class="w-full h-full bg-cover bg-center transition-transform duration-1000 scale-100 hover:scale-105"
-
-        style="background-image: url('E:\\\New folder (3)\\\New folder (3)\\\images\\\Melloura Artisan Chocolates in a Cozy Café (1).png');">
-
+        style="background-image: url('images/Melloura Artisan Chocolates in a Cozy Café (1).png');">
       </div>
-
       <div class="absolute inset-0 bg-[#25160e]/50 mix-blend-multiply"></div>
-
       <div class="absolute inset-0 bg-gradient-to-t from-[#25160e]/70 via-transparent to-black/20"></div>
-
     </div>
-
-
 
     <div class="relative z-10 text-center px-4 md:px-8 max-w-4xl mx-auto flex flex-col items-center">
-
       <span
-
         class="bg-[#25160e]/80 border border-white/20 text-[#fdb56c] text-[10px] md:text-xs tracking-[0.25em] font-semibold px-4 py-1.5 rounded uppercase mb-4 shadow-sm backdrop-blur-xs">
-
         MELLOURA CHOCOLATES
-
       </span>
-
       <h1
-
         class="font-serif text-3xl sm:text-5xl md:text-6xl text-white font-bold mb-4 drop-shadow-md leading-tight max-w-3xl">
-
         Premium handcrafted chocolates for gifting and special moments.
-
       </h1>
-
       <p class="font-sans text-sm md:text-base text-white/90 mb-8 max-w-xl font-light leading-relaxed">
-
         Artisanal Belgian chocolate craftsmanship elevated with rare single-origin cocoa, caramelized nuts, and velvety
-
         fillings.
-
       </p>
-
       <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
-
         <a href="shop.html"
-
           class="px-8 py-3.5 bg-[#3c2a21] text-white font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#25160e] transition-all duration-300 shadow-lg text-center">
-
           SHOP CHOCOLATES
-
         </a>
-
         <a href="https://wa.me/919624594839" target="_blank"
-
           class="px-8 py-3.5 bg-transparent border-2 border-white text-white font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-white hover:text-[#25160e] transition-all duration-300 backdrop-blur-xs flex items-center justify-center gap-2">
-
           <span class="material-symbols-outlined text-base fill-1 text-[#25D366]">chat</span>
-
           ORDER ON WHATSAPP
-
         </a>
-
       </div>
-
     </div>
-
   </section>
-
-
 
   <!-- OUR CHOCOLATES Section (Screenshot 4) --
-
   <section class="w-full py-20 md:py-28 px-4 md:px-12 max-w-[1280px] mx-auto" id="our-chocolates">
-
     <div class="text-center mb-12">
-
       <span class="font-sans text-xs uppercase tracking-[0.25em] text-[#885210] font-semibold mb-2 block">Our
-
         Collection</span>
-
       <h2 class="font-serif text-3xl md:text-5xl text-[#25160e] font-bold mb-3">Our Chocolates</h2>
-
       <p class="font-sans text-xs md:text-sm text-[#4f4540] max-w-xl mx-auto">
-
         Discover our collection of handcrafted artisanal chocolates, made with the finest ingredients.
-
       </p>
-
     </div>
 
-
-
-    *<!--* Search & Filter Bar -->
-
+    <!-- Search & Filter Bar -->
   <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
-
     <!-- Search Input -->
-
     <div class="relative w-full md:w-80">
-
       <span
-
         class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[#81756f] text-lg">search</span>
-
       <input id="home-search-input" type="text" placeholder="Search chocolates..."
-
         class="w-full pl-11 pr-4 py-2.5 rounded-full border border-[#d3c3bd] bg-white text-xs font-sans text-[#1c1b1a] focus:outline-none focus:border-[#25160e] transition-colors placeholder-[#81756f]" />
-
     </div>
-
-
 
     <!-- Category Filter Chips -->
-
     <div class="flex flex-wrap justify-center gap-2">
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#25160e] text-white border border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="ALL">ALL</button>
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] hover:text-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="BESTSELLERS">BESTSELLERS</button>
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] hover:text-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="NUTTY">NUTTY</button>
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] hover:text-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="KUNAFA">KUNAFA</button>
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] hover:text-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="OREO">OREO</button>
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] hover:text-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="CARAMEL">CARAMEL</button>
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] hover:text-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="COCONUT">COCONUT</button>
-
       <button
-
         class="category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] hover:text-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
-
         data-category="GIFTING">GIFTING</button>
-
     </div>
-
   </div>
-
-
 
   <!-- Product Grid -->
-
   <div id="home-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5"></div>
 
-
-
   <div class="mt-12 text-center">
-
     <a href="shop.html"
-
       class="inline-flex items-center gap-2 px-8 py-3.5 border-2 border-[#25160e] text-[#25160e] text-xs font-bold tracking-widest uppercase rounded hover:bg-[#25160e] hover:text-white transition-colors duration-300">
-
       <span>VIEW ALL</span>
-
       <span class="material-symbols-outlined text-sm">arrow_forward</span>
-
     </a>
-
   </div>
-
   </section>
-
-
-
 
 
   <section id="flavours" class="flavours-section w-full py-20 md:py-28 border-t border-[#d3c3bd]/40">
-
     <div class="max-w-[1280px] mx-auto px-4 md:px-12">
 
-
-
       <!-- Section heading -->
-
       <div class="text-center mb-14">
-
         <span class="font-sans text-xs uppercase tracking-[0.3em] text-[#885210] font-semibold mb-2 block">Our Signature
-
           Collection</span>
-
         <h2 class="font-serif text-3xl md:text-5xl text-[#25160e] font-bold mb-3">Flavours &amp; Price List</h2>
-
         <p class="font-sans text-xs md:text-sm text-[#4f4540] max-w-lg mx-auto leading-relaxed">
-
           Select any flavour to explore the taste, texture and story behind each artisanal creation.
-
         </p>
-
         <div class="mx-auto mt-5 w-16 h-px bg-[#cca730]"></div>
-
       </div>
 
-
-
       <!-- Main 3-column grid: list | image | detail -->
-
       <div
-
         class="grid grid-cols-1 lg:grid-cols-[300px_1fr_1fr] gap-0 lg:gap-px bg-[#d3c3bd]/30 rounded overflow-hidden border border-[#d3c3bd]/50 shadow-sm">
 
-
-
         <!-- ─── LEFT: Scrollable Flavour List ─── -->
-
         <div class="bg-[#fdf9f6] lg:border-r border-[#d3c3bd]/40">
-
           <div class="px-5 py-4 border-b border-[#d3c3bd]/40 flex items-center gap-2">
-
             <span class="material-symbols-outlined text-[#885210] text-base">menu_book</span>
-
             <span class="font-sans text-[10px] font-bold tracking-[0.25em] uppercase text-[#4f4540]">Select a
-
               Flavour</span>
-
           </div>
-
           <div id="flavours-list"
-
             class="flavours-list-col lg:flex-col lg:overflow-y-auto overflow-x-auto max-h-[520px] p-3 lg:p-0 gap-2 lg:gap-0">
-
             <!-- populated by JS -->
-
           </div>
-
         </div>
-
-
 
         <!-- ─── CENTER: Product Image ─── -->
 
-
-
         <div
-
           class="bg-[#f7f3f0] flex items-center justify-center p-8 lg:p-12 border-t lg:border-t-0 border-[#d3c3bd]/40 lg:border-r border-r-0 lg:border-r-[#d3c3bd]/40">
-
           <div class="w-full max-w-[340px]">
-
             <div class="flavour-image-wrap">
-
               <img id="flavour-main-image"
-                 src="/images/Golden%20Lotus%20Caramel%20Truffles.png"
-                 alt="Golden Lotus Chocolate"
-                 class="fade-in"
-                 onerror="if (!this.dataset.imageFallbackTried) { this.dataset.imageFallbackTried = '1'; this.src = '/images/Golden%20Lotus%20Caramel%20Truffles.png'; }" />
-
+                src="images/Golden Lotus Caramel Truffles.png"
+                alt="Golden Lotus" class="fade-in" />
             </div>
-
             <!-- Bottom image meta bar -->
-
             <div class="mt-4 flex items-center justify-between px-1">
-
               <div class="flex items-center gap-1.5">
-
                 <span class="w-2 h-2 rounded-full bg-[#25d366] inline-block"></span>
-
                 <span class="font-sans text-[10px] text-[#4f4540] uppercase tracking-wider font-medium">In Stock</span>
-
               </div>
-
               <span class="font-sans text-[10px] text-[#81756f] uppercase tracking-wider">Handcrafted</span>
-
             </div>
-
           </div>
-
         </div>
-
-
 
         <!-- ─── RIGHT: Product Detail + Actions ─── -->
-
         <div class="bg-[#fdf9f6] flex flex-col justify-between p-8 lg:p-10 border-t lg:border-t-0 border-[#d3c3bd]/40">
 
-
-
           <!-- Product info (animated on change) -->
-
           <div id="flavour-detail-panel" class="flavour-detail-anim">
-
             <span id="flavour-badge"
-
               class="inline-block font-sans text-[9px] tracking-[0.2em] font-bold uppercase bg-[#f1edea] text-[#885210] border border-[#d3c3bd] px-3 py-1 rounded mb-3">POPULAR</span>
-
             <h3 id="flavour-detail-name" class="flavour-detail-name mb-3">Biscoff Bliss</h3>
-
             <p id="flavour-detail-desc" class="flavour-detail-desc mb-6">
-
               Belgian chocolate truffle layered with luscious Biscoff spread, crisp caramelized biscuit crumble and a
-
               delicate cinnamon finish.
-
             </p>
 
-
-
             <!-- Price row -->
-
             <div class="flex items-baseline flex-wrap gap-y-1 mb-8">
-
               <span id="flavour-detail-price" class="flavour-detail-price">₹599</span>
-
               <span id="flavour-detail-original" class="flavour-detail-original">₹699</span>
-
               <span id="flavour-detail-discount" class="flavour-detail-discount">14% OFF</span>
-
             </div>
-
-
 
             <!-- Weight/size -->
-
             <div class="flex items-center gap-2 mb-8">
-
               <span class="material-symbols-outlined text-[#885210] text-sm">inventory_2</span>
-
               <span id="flavour-detail-weight" class="font-sans text-xs text-[#4f4540]">Pack of 4 Truffles</span>
-
             </div>
-
           </div>
-
-
 
           <!-- Action Buttons -->
-
           <div class="space-y-3 mt-auto">
-
             <!-- Quantity row -->
-
             <div class="flex items-center gap-3 mb-2">
-
               <span class="font-sans text-xs text-[#4f4540] font-medium uppercase tracking-wider">Qty:</span>
-
               <div class="flex items-center border border-[#d3c3bd] rounded bg-white">
-
                 <button onclick="MellouraFlavours.changeQty(-1)"
-
                   class="px-3 py-2 text-sm text-[#25160e] hover:bg-[#f1edea] transition-colors">−</button>
-
                 <span id="flavour-qty-display" class="px-4 text-sm font-medium text-[#25160e] select-none">1</span>
-
                 <button onclick="MellouraFlavours.changeQty(1)"
-
                   class="px-3 py-2 text-sm text-[#25160e] hover:bg-[#f1edea] transition-colors">+</button>
-
               </div>
-
             </div>
-
-
 
             <!-- ADD TO BAG -->
-
             <button onclick="MellouraFlavours.addToBag()"
-
               class="w-full flex items-center justify-center gap-2 py-3.5 bg-[#25160e] text-white font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#3c2a21] transition-colors duration-300 shadow-sm">
-
               <span class="material-symbols-outlined text-sm">shopping_bag</span>
-
               <span>ADD TO BAG</span>
-
             </button>
-
-
 
             <!-- BUY NOW -->
-
             <button onclick="MellouraFlavours.buyNow()"
-
               class="w-full flex items-center justify-center gap-2 py-3.5 border-2 border-[#25160e] text-[#25160e] font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#25160e] hover:text-white transition-colors duration-300">
-
               <span class="material-symbols-outlined text-sm">bolt</span>
-
               <span>BUY NOW</span>
-
             </button>
-
-
 
             <!-- WhatsApp -->
-
             <button onclick="MellouraFlavours.whatsapp()"
-
               class="w-full flex items-center justify-center gap-2 py-3 bg-[#25d366] text-white font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#1da854] transition-colors duration-300">
-
               <span class="material-symbols-outlined fill-1 text-sm">chat</span>
-
               <span>ORDER ON WHATSAPP</span>
-
             </button>
 
-
-
             <!-- Divider & trust signal -->
-
             <div class="pt-3 border-t border-[#d3c3bd]/50 flex items-center gap-2">
-
               <span class="material-symbols-outlined text-[#885210] text-sm">verified</span>
-
               <span class="font-sans text-[10px] text-[#81756f] tracking-wider">Insulated cold-pack delivery. Freshness
-
                 guaranteed.</span>
-
             </div>
-
           </div>
-
         </div>
 
-
-
       </div>
-
     </div>
-
   </section>
-
-
 
   <!-- SHOP BY OCCASION Section (Screenshot 4) -->
-
   <section class="w-full py-20 bg-[#f7f3f0] px-4 md:px-12">
-
     <div class="max-w-[1280px] mx-auto">
-
       <div class="text-center mb-12">
-
         <h2 class="font-serif text-3xl md:text-4xl text-[#25160e] font-bold mb-2">Shop By Occasion</h2>
-
         <p class="font-sans text-xs md:text-sm text-[#4f4540]">Find the perfect chocolates for every special moment.</p>
-
       </div>
-
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-
         <!-- Birthdays -->
-
         <div class="relative h-[320px] rounded overflow-hidden group cursor-pointer shadow-sm">
-
           <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-
-            style="background-image: url('E:\\\New folder (3)\\\New folder (3)\\\images\\\a_warm_luxurious_festive_still_life_scene_in_a_s.png');">
-
+            style="background-image: url('images/a_warm_luxurious_festive_still_life_scene_in_a_s.png');">
           </div>
-
           <div class="absolute inset-0 bg-black/45 group-hover:bg-black/35 transition-colors"></div>
-
           <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-
             <h3 class="font-serif text-2xl md:text-3xl font-bold mb-3 tracking-wide">Birthdays</h3>
-
             <a href="shop.html?category=GIFTING"
-
               class="border border-white/90 px-6 py-2 rounded text-xs font-sans font-bold tracking-widest hover:bg-white hover:text-[#25160e] transition-colors uppercase">
-
               SHOP NOW
-
             </a>
-
           </div>
-
         </div>
-
-
 
         <!-- Anniversaries -->
-
         <div class="relative h-[320px] rounded overflow-hidden group cursor-pointer shadow-sm">
-
           <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-
-            style="background-image: url('E:\\\New folder (3)\\\New folder (3)\\\images\\\Luxurious Raspberry Chocolate Gift Box.png');">
-
+            style="background-image: url('images/Luxurious Raspberry Chocolate Gift Box.png');">
           </div>
-
           <div class="absolute inset-0 bg-black/45 group-hover:bg-black/35 transition-colors"></div>
-
           <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-
             <h3 class="font-serif text-2xl md:text-3xl font-bold mb-3 tracking-wide">Anniversaries</h3>
-
             <a href="shop.html?category=CARAMEL"
-
               class="border border-white/90 px-6 py-2 rounded text-xs font-sans font-bold tracking-widest hover:bg-white hover:text-[#25160e] transition-colors uppercase">
-
               SHOP NOW
-
             </a>
-
           </div>
-
         </div>
-
-
 
         <!-- Corporate Gifting -->
-
         <div class="relative h-[320px] rounded overflow-hidden group cursor-pointer shadow-sm">
-
           <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-
-            style="background-image: url('E:\\\New folder (3)\\\New folder (3)\\\images\\\Elegant Corporate Chocolate Gifting Set.png');">
-
+            style="background-image: url('images/Elegant Corporate Chocolate Gifting Set.png');">
           </div>
-
           <div class="absolute inset-0 bg-black/45 group-hover:bg-black/35 transition-colors"></div>
-
           <div class="absolute inset-0 flex flex-col items-center justify-center text-white p-4">
-
             <h3 class="font-serif text-2xl md:text-3xl font-bold mb-3 tracking-wide">Corporate Gifting</h3>
-
             <a href="shop.html?category=GIFTING"
-
               class="border border-white/90 px-6 py-2 rounded text-xs font-sans font-bold tracking-widest hover:bg-white hover:text-[#25160e] transition-colors uppercase">
-
               SHOP NOW
-
             </a>
-
           </div>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-
 
   <!-- THE MELLOURA STANDARD Section (Screenshot 4) -->
-
   <section id="standards" class="w-full py-20 px-4 md:px-12 max-w-[1280px] mx-auto text-center">
-
     <span class="font-sans text-xs uppercase tracking-[0.25em] text-[#885210] font-semibold mb-2 block">Our
-
       Pillars</span>
-
     <h2 class="font-serif text-3xl md:text-4xl text-[#25160e] font-bold mb-16">The Melloura Standard</h2>
-
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
-
       <div class="flex flex-col items-center p-4">
-
         <div class="w-16 h-16 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] mb-4">
-
           <span class="material-symbols-outlined text-3xl">eco</span>
-
         </div>
-
         <h4 class="font-serif text-lg text-[#25160e] font-bold mb-2">Ethically Sourced</h4>
-
         <p class="font-sans text-xs md:text-sm text-[#4f4540] leading-relaxed">We source our cocoa beans from
-
           sustainable farms.</p>
-
       </div>
 
-
-
       <div class="flex flex-col items-center p-4">
-
         <div class="w-16 h-16 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] mb-4">
-
           <span class="material-symbols-outlined text-3xl">handyman</span>
-
         </div>
-
         <h4 class="font-serif text-lg text-[#25160e] font-bold mb-2">Handcrafted</h4>
-
         <p class="font-sans text-xs md:text-sm text-[#4f4540] leading-relaxed">Each piece is meticulously crafted by our
-
           expert chocolatiers.</p>
-
       </div>
 
-
-
       <div class="flex flex-col items-center p-4">
-
         <div class="w-16 h-16 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] mb-4">
-
           <span class="material-symbols-outlined text-3xl">verified</span>
-
         </div>
-
         <h4 class="font-serif text-lg text-[#25160e] font-bold mb-2">Premium Quality</h4>
-
         <p class="font-sans text-xs md:text-sm text-[#4f4540] leading-relaxed">Only the finest ingredients make it into
-
           our chocolates.</p>
-
       </div>
-
-
 
       <div class="flex flex-col items-center p-4">
-
         <div class="w-16 h-16 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] mb-4">
-
           <span class="material-symbols-outlined text-3xl">local_shipping</span>
-
         </div>
-
         <h4 class="font-serif text-lg text-[#25160e] font-bold mb-2">Safe Delivery</h4>
-
         <p class="font-sans text-xs md:text-sm text-[#4f4540] leading-relaxed">Temperature-controlled packaging ensures
-
           perfect arrival.</p>
-
       </div>
-
     </div>
-
   </section>
-
-
-
-
 
 
 
   <!-- GIFT SOMETHING SWEET Section (Screenshot 4) -->
 
 
-
-
-
   <section id="gift-builder" class="w-full py-20 md:py-24 bg-[#f7f3f0] px-4 md:px-12 border-y border-[#d3c3bd]/60">
-
     <div class="max-w-[1280px] mx-auto">
-
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
         <!-- Visual Box Image -->
-
         <div class="relative h-[420px] md:h-[520px] rounded overflow-hidden shadow-xl border border-[#d3c3bd]">
-
           <div class="absolute inset-0 bg-cover bg-center"
-
-            style="background-image: url('E:\\\New folder (3)\\\New folder (3)\\\images\\\Melloura Chocolate Boutique Gift Box.png');">
-
+            style="background-image: url('images/Melloura Chocolate Boutique Gift Box.png');">
           </div>
-
         </div>
 
-
-
         <!-- Interactive Configurator -->
-
         <div class="flex flex-col">
-
           <span class="font-sans text-xs font-bold text-[#885210] tracking-widest uppercase mb-2">GIFT SOMETHING
-
             SWEET</span>
-
           <h2 class="font-serif text-3xl md:text-4xl text-[#25160e] font-bold mb-4">Create the Perfect Gift Box</h2>
-
           <p class="font-sans text-xs md:text-sm text-[#4f4540] mb-8 leading-relaxed">
-
             Select from our artisanal collection to curate a personalized box of luxury chocolates. Beautifully packaged
-
             with a ribbon and an optional handwritten note.
-
           </p>
-
-
 
           <!-- 3 Selectable Boxes -->
 
-
-
           <div class="space-y-4 mb-6">
 
-
-
             <!-- Petite Box: SOLD OUT -->
-
             <div id="gift-opt-petite" aria-disabled="true"
-
               class="flex items-center justify-between gap-4 p-4 md:p-5 border-2 border-[#d3c3bd] rounded-lg bg-[#f7f3f0] opacity-60 cursor-not-allowed">
-
               <div class="flex items-center gap-3">
-
                 <span class="material-symbols-outlined text-[#81756f] text-2xl">
-
                   remove_shopping_cart
-
                 </span>
-
                 <div>
-
                   <h4 class="font-serif text-base font-bold text-[#25160e]">
-
                     Petite Box (4 Pieces)
-
                   </h4>
-
                   <p class="font-sans text-xs text-[#4f4540]">
-
                     Perfect for a small gesture.
-
                   </p>
-
                 </div>
-
               </div>
-
-
 
               <div class="text-right shrink-0">
-
                 <span class="block font-serif text-lg font-bold text-[#885210]">₹199</span>
-
                 <span class="text-[10px] font-bold tracking-wider text-red-700">
-
                   SOLD OUT
-
                 </span>
-
               </div>
-
             </div>
-
-
 
             <!-- Signature Box: SOLD OUT -->
-
             <div id="gift-opt-signature" aria-disabled="true"
-
               class="flex items-center justify-between gap-4 p-4 md:p-5 border-2 border-[#d3c3bd] rounded-lg bg-[#f7f3f0] opacity-60 cursor-not-allowed">
-
               <div class="flex items-center gap-3">
-
                 <span class="material-symbols-outlined text-[#81756f] text-2xl">
-
                   remove_shopping_cart
-
                 </span>
-
                 <div>
-
                   <h4 class="font-serif text-base font-bold text-[#25160e]">
-
                     Signature Box (6 Pieces)
-
                   </h4>
-
                   <p class="font-sans text-xs text-[#4f4540]">
-
                     Our most popular gifting size.
-
                   </p>
-
                 </div>
-
               </div>
-
-
 
               <div class="text-right shrink-0">
-
                 <span class="block font-serif text-lg font-bold text-[#885210]">₹299</span>
-
                 <span class="text-[10px] font-bold tracking-wider text-red-700">
-
                   SOLD OUT
-
                 </span>
-
               </div>
-
             </div>
-
-
 
             <!-- Grand Box: Keep your existing available option here -->
 
-
-
           </div>
-
-
-
 
 
           <!-- Grand Box -->
-
           <div id="gift-opt-grand" onclick="MellouraUI.selectGiftBox('grand')"
-
             class="flex items-center justify-between p-4 md:p-5 border-2 border-[#d3c3bd] rounded-lg hover:border-[#25160e] cursor-pointer bg-white transition-all">
-
             <div class="flex items-center gap-3">
-
               <span id="gift-icon-grand"
-
                 class="material-symbols-outlined text-[#25160e] text-2xl">check_box_outline_blank</span>
-
               <div>
-
                 <h4 class="font-serif text-base font-bold text-[#25160e]">Grand Box (12 Pieces)</h4>
-
                 <p class="font-sans text-xs text-[#4f4540]">For ultimate indulgence.</p>
-
               </div>
-
             </div>
-
             <span class="font-serif text-lg font-bold text-[#885210]">₹599</span>
-
           </div>
-
         </div>
-
-
 
         <!-- Personal Message Trigger -->
-
         <div class="mb-8">
-
           <button onclick="MellouraUI.promptPersonalMessage()"
-
             class="font-sans text-xs font-bold text-[#885210] hover:text-[#25160e] transition-colors flex items-center gap-1.5 underline underline-offset-4 tracking-wider uppercase">
-
             <span class="material-symbols-outlined text-base">edit</span>
-
             <span>ADD A PERSONAL MESSAGE</span>
-
           </button>
-
           <p id="gift-message-preview" class="text-xs italic text-[#4f4540] mt-2"></p>
-
         </div>
 
-
-
         <!-- Build Your Box Action -->
-
         <button onclick="MellouraUI.buildAndAddGiftBox()"
-
           class="w-full py-4 bg-[#25160e] text-white font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#3c2a21] transition-colors shadow-lg flex items-center justify-center gap-2">
-
           <span>BUILD YOUR BOX</span>
-
           <span class="material-symbols-outlined text-sm">arrow_forward</span>
-
         </button>
-
       </div>
-
     </div>
-
     </div>
-
   </section>
-
-
-
 
 
   <section id="heritage" class="bg-[#f1edea] py-24 md:py-32 relative overflow-hidden border-t border-[#d3c3bd]/50">
-
     <div class="max-w-[1280px] mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
       <!-- Image on LEFT -->
-
       <div class="relative">
-
         <div
-
           class="relative z-10 w-full aspect-square shadow-[0_10px_30px_-10px_rgba(112,90,79,0.15)] overflow-hidden rounded bg-[#ebe7e4]">
-
           <div class="w-full h-full bg-cover bg-center"
-
-            style="background-image: url('E:\\\New folder (3)\\\New folder (3)\\\images\\\Precision Chocolate Craft.png');">
-
+            style="background-image: url('images/Precision Chocolate Craft.png');">
           </div>
-
         </div>
-
         <div class="absolute -bottom-8 -right-8 z-0 w-2/3 aspect-[4/5] bg-[#e5e2df] hidden md:block rounded"></div>
-
       </div>
-
-
-
 
 
       <div class="space-y-6 md:space-y-8">
-
         <h2 class="text-4xl sm:text-5xl md:text-6xl font-serif leading-tight text-[#1c1b1a]">
-
           Our Heritage <br><span class="italic font-normal font-serif">is our</span> Craft
-
         </h2>
-
         <p class="text-base sm:text-lg text-[#4f4540] leading-relaxed font-sans font-normal">
-
           Born from a reverence for the grand confiseries of Brussels and Paris, Melloura was founded to resurrect the
-
           sacred art of chocolate making. We reject mass production in favor of meticulous small-batch creation,
-
           honoring centuries-old techniques perfected by European masters.
-
         </p>
-
         <p class="text-base sm:text-lg text-[#4f4540] leading-relaxed font-sans font-normal">
-
           Every ganache is infused slowly, every praline layered with patience, and every truffle shaped by skilled
-
           human hands. We source single-origin cocoa from ethical, biodiversity-focused farms across Ecuador,
-
           Madagascar, and Venezuela—ensuring that every bite honors both tradition and the earth.
-
         </p>
-
         <div class="pt-4">
-
           <a href="shop.html"
-
             class="inline-block border border-[#25160e] text-[#25160e] px-10 md:px-12 py-4 text-xs font-bold uppercase tracking-widest hover:bg-[#25160e] hover:text-white transition-all font-sans">
-
             Read Our Full Story
-
           </a>
-
         </div>
-
       </div>
-
     </div>
-
   </section>
-
-
 
   <!-- TESTIMONIAL (Screenshot 3) -->
-
   <section class="py-20 bg-[#f7f3f0] text-center border-t border-[#d3c3bd]/60 px-4">
-
     <div class="max-w-3xl mx-auto space-y-6">
-
       <span class="material-symbols-outlined text-[#885210] text-4xl">format_quote</span>
-
       <blockquote class="font-serif text-xl sm:text-2xl md:text-3xl italic text-[#25160e] leading-relaxed">
-
         "The level of craftsmanship is unparalleled. Each piece is a journey through texture and taste that reminds one
-
         why Belgian chocolate is the standard of the world. Melloura is the ultimate expression of chocolate as art."
-
       </blockquote>
-
       <div class="pt-2">
-
         <p class="font-sans text-xs font-bold uppercase tracking-[0.2em] text-[#25160e]">Clara Vandeberg</p>
-
         <p class="font-sans text-xs text-[#81756f] tracking-wider italic">Michelin Star Pastry Chef</p>
-
       </div>
-
     </div>
-
   </section>
-
-
 
   <!-- Inner Circle Newsletter (Screenshot 3) -->
-
   <section id="inner-circle" class="py-16 bg-[#fdf9f6] border-b border-[#d3c3bd]/60 px-4 md:px-12">
-
     <div class="max-w-[1280px] mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
-
       <div class="text-center md:text-left">
-
         <h3 class="font-serif text-2xl md:text-3xl text-[#25160e] font-bold mb-1">Join the inner circle</h3>
-
         <p class="font-sans text-xs md:text-sm text-[#4f4540]">Exclusive seasonal drops and invitations to private
-
           boutique events.</p>
-
       </div>
-
       <form onsubmit="event.preventDefault(); alert('Thank you for joining the Melloura Inner Circle.'); this.reset();"
-
         class="flex w-full md:w-auto gap-2">
-
         <input type="email" placeholder="Email Address" required
-
           class="bg-white border border-[#d3c3bd] px-4 py-3 text-xs font-sans text-[#1c1b1a] rounded focus:outline-none focus:border-[#25160e] min-w-[240px] sm:min-w-[300px]" />
-
         <button type="submit"
-
           class="bg-[#25160e] text-white px-8 font-sans text-[10px] font-bold uppercase tracking-widest rounded hover:bg-[#3c2a21] transition-colors whitespace-nowrap">
-
           Subscribe
-
         </button>
-
       </form>
-
     </div>
-
   </section>
 
-
-
   <!-- Global Footer -->
-
   <footer id="site-footer"></footer>
 
-
-
   <!-- Drawer Containers -->
-
   <div id="cart-drawer-container"></div>
-
   <div id="mobile-menu-container"></div>
-
   <div id="search-modal-container"></div>
 
-
-
   <!-- Gift Message Modal -->
-
   <div id="gift-message-modal"
-
     class="modal-backdrop fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
-
     <div class="fixed inset-0" onclick="document.getElementById('gift-message-modal').classList.remove('active')"></div>
-
     <div
-
       class="modal-panel relative w-full max-w-lg bg-[#fdf9f6] rounded-lg shadow-2xl p-6 md:p-8 border border-[#d3c3bd] z-10">
-
       <div class="flex justify-between items-center mb-4">
-
         <h3 class="font-serif text-xl font-bold text-[#25160e]">Add a Handwritten Note</h3>
-
         <button onclick="document.getElementById('gift-message-modal').classList.remove('active')"
-
           class="text-[#4f4540] hover:text-[#25160e]">
-
           <span class="material-symbols-outlined">close</span>
-
         </button>
-
       </div>
-
       <p class="text-xs text-[#4f4540] mb-4">We will hand-write your heartfelt message on heavy-stock cream paper with
-
         gold wax seal.</p>
-
       <textarea id="gift-modal-textarea" rows="4" maxlength="250"
-
         placeholder="e.g. Wishing you sweetness and joy on your special day..."
-
         class="w-full p-4 border border-[#d3c3bd] rounded bg-white text-xs text-[#1c1b1a] focus:outline-none focus:border-[#25160e] mb-4"></textarea>
-
       <div class="flex justify-end gap-3">
-
         <button onclick="document.getElementById('gift-message-modal').classList.remove('active')"
-
           class="px-5 py-2.5 border border-[#d3c3bd] rounded text-xs font-semibold uppercase tracking-wider text-[#4f4540] hover:bg-[#f1edea]">
-
           Cancel
-
         </button>
-
         <button onclick="MellouraUI.saveGiftMessageFromModal()"
-
           class="px-6 py-2.5 bg-[#25160e] text-white rounded text-xs font-semibold uppercase tracking-wider hover:bg-[#3c2a21]">
-
           Save Message
-
         </button>
-
       </div>
-
     </div>
-
   </div>
 
-
-
   <!-- Scripts -->
-
   <script src="js/config.js"></script>
-
   <script src="js/data/products.js"></script>
-
   <script src="js/cart.js"></script>
-
   <script src="js/checkout.js"></script>
-
   <script src="js/ui.js"></script>
-
   <script src="js/app.js"></script>
-
 </body>
-
-
 
 </html>
