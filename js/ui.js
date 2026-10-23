@@ -962,79 +962,78 @@ const MellouraFlavours = (() => {
 
 
   // ─── Flavour data list ───────────────────────────────────────────
-  const flavours = [
-    {
-      id: 'golden-lotus',
-      name: 'Golden Lotus',
-      price: 599,
-      compareAt: 699,
-      badge: 'POPULAR',
-      shortDescription: 'A luxurious blend of creamy chocolate with roasted caramel and Belgian speculoos biscuit paste, adorned with golden flecks.',
-      weight: 'Pack of 12 Truffles',
-      image: "E:\\New folder (3)\\New folder (3)\\images\\Golden Lotus Caramel Truffles.png"
-    },
-    {
-      id: 'Lotus Biscoff ',
-      name: 'Lotus Biscoff ',
-      price: 599,
-      compareAt: 699,
-      badge: "CHEF'S PICK",
-      shortDescription: 'Dense, fudgy bites of slow-baked Belgian chocolate brownie loaded with Californian walnuts toasted in clarified butter.',
-      weight: 'Box of 12 Pieces',
-      image: "E:\\New folder (3)\\New folder (3)\\images\\Gooey Biscoff Cookie Butter Bonbons.png"
-    },
-    {
-      id: 'Walnut Royale',
-      name: 'Walnut Royale',
-      price: 599,
-      compareAt: 699,
-      badge: 'SIGNATURE',
-      shortDescription: 'Velvety salted caramel ganache enrobed in premium dark chocolate with a hand-crowned caramel lattice top.',
-      weight: 'Box of 12 Truffles',
-      image: "E:\\New folder (3)\\New folder (3)\\images\\Gourmet Walnut Brownie Truffles.png"
-    },
-    {
-      id: 'Coconut Velvet',
-      name: 'Coconut Velvet',
-      price: 599,
-      compareAt: 699,
-      badge: 'TRENDING',
-      shortDescription: 'Desiccated coconut and white chocolate ganache wrapped in a silky dark chocolate shell — tropical freshness meets Belgian craft.',
-      weight: 'Pack of 12 Truffles',
-      image: "E:\\New folder (3)\\New folder (3)\\images\\Round Coconut (1).png"
-    },
-    {
-      id: 'Mix Dry Fruits',
-      name: 'Mix Dry Fruits',
-      price: 599,
-      compareAt: 629,
-      badge: 'PREMIUM',
-      shortDescription: 'A regal trio of cashew, almond and pistachio pralines encased in single-origin dark chocolate, dusted with gold.',
-      weight: 'Box of 12 Pieces',
-      image: "E:\\New folder (3)\\New folder (3)\\images\\Round Dry-Fruit (1).png"
-    },
-    {
-      id: 'Signature Square',
-      name: 'Signature Square',
-      price: 599,
-      compareAt: 679,
-      badge: 'LIGHT',
-      shortDescription: 'Desiccated coconut and white chocolate ganache wrapped in a silky dark chocolate shell — tropical freshness meets Belgian craft.',
-      weight: 'Pack of 12 Truffles',
-      image: "E:\\New folder (3)\\New folder (3)\\images\\Square  Dry-Fruit (1).png"
-    },
-    {
-      id: 'Pistachio Kunafa',
-      name: 'Pistachio Kunafa',
-      price: 599,
-      compareAt: 749,
-      badge: 'BESTSELLER',
-      shortDescription: 'Crispy kadaifi pastry, Antep pistachio cream and premium milk chocolate — the Dubai sensation, artisanal Melloura style.',
-      weight: 'Box of 12 Pieces',
-      image: "E:\\New folder (3)\\New folder (3)\\images\\Square Kunafa (1).png"
-    },
-
-  ];
+const flavours = [
+  {
+    id: 'golden-lotus',
+    name: 'Golden Lotus',
+    price: 599,
+    compareAt: 699,
+    badge: 'POPULAR',
+    shortDescription: 'A luxurious blend of creamy chocolate with roasted caramel and Belgian speculoos biscuit paste, adorned with golden flecks.',
+    weight: 'Pack of 12 Truffles',
+    image: "images/Golden Lotus Caramel Truffles.png"
+  },
+  {
+    id: 'Lotus Biscoff ',
+    name: 'Lotus Biscoff ',
+    price: 599,
+    compareAt: 699,
+    badge: "CHEF'S PICK",
+    shortDescription: 'Dense, fudgy bites of slow-baked Belgian chocolate brownie loaded with Californian walnuts toasted in clarified butter.',
+    weight: 'Box of 12 Pieces',
+    image: "images/Gooey Biscoff Cookie Butter Bonbons.png"
+  },
+  {
+    id: 'Walnut Royale',
+    name: 'Walnut Royale',
+    price: 599,
+    compareAt: 699,
+    badge: 'SIGNATURE',
+    shortDescription: 'Velvety salted caramel ganache enrobed in premium dark chocolate with a hand-crowned caramel lattice top.',
+    weight: 'Box of 12 Truffles',
+    image: "images/Gourmet Walnut Brownie Truffles.png"
+  },
+  {
+    id: 'Coconut Velvet',
+    name: 'Coconut Velvet',
+    price: 599,
+    compareAt: 699,
+    badge: 'TRENDING',
+    shortDescription: 'Desiccated coconut and white chocolate ganache wrapped in a silky dark chocolate shell — tropical freshness meets Belgian craft.',
+    weight: 'Pack of 12 Truffles',
+    image: "images/Round Coconut (1).png"
+  },
+  {
+    id: 'Mix Dry Fruits',
+    name: 'Mix Dry Fruits',
+    price: 599,
+    compareAt: 629,
+    badge: 'PREMIUM',
+    shortDescription: 'A regal trio of cashew, almond and pistachio pralines encased in single-origin dark chocolate, dusted with gold.',
+    weight: 'Box of 12 Pieces',
+    image: "images/Round Dry-Fruit (1).png"
+  },
+  {
+    id: 'Signature Square',
+    name: 'Signature Square',
+    price: 599,
+    compareAt: 679,
+    badge: 'LIGHT',
+    shortDescription: 'Desiccated coconut and white chocolate ganache wrapped in a silky dark chocolate shell — tropical freshness meets Belgian craft.',
+    weight: 'Pack of 12 Truffles',
+    image: "images/Square  Dry-Fruit (1).png"
+  },
+  {
+    id: 'Pistachio Kunafa',
+    name: 'Pistachio Kunafa',
+    price: 599,
+    compareAt: 749,
+    badge: 'BESTSELLER',
+    shortDescription: 'Crispy kadaifi pastry, Antep pistachio cream and premium milk chocolate — the Dubai sensation, artisanal Melloura style.',
+    weight: 'Box of 12 Pieces',
+    image: "images/Square Kunafa (1).png"
+  }
+];
 
   let currentIndex = 0;
   let currentQty = 1;
