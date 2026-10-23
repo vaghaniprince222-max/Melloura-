@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Details & Shipping - Melloura Chocolates Checkout</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#25160e',
+            'primary-container': '#3c2a21',
+            secondary: '#885210',
+            'secondary-container': '#fdb56c',
+            tertiary: '#735c00',
+            'tertiary-container': '#cca730',
+            background: '#fdf9f6',
+            surface: '#fdf9f6',
+            'surface-container-low': '#f7f3f0',
+            'surface-container': '#f1edea',
+            'surface-container-high': '#ebe7e4',
+            'surface-container-highest': '#e5e2df',
+            'on-surface': '#1c1b1a',
+            'on-surface-variant': '#4f4540',
+            outline: '#81756f',
+            'outline-variant': '#d3c3bd'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="checkout-step-1"
+  class="bg-[#fdf9f6] text-[#1c1b1a] antialiased selection:bg-[#fdb56c] selection:text-[#25160e] min-h-screen flex flex-col">
+
+  <!-- Slim Transactional Header (Screenshot 2) -->
+  <header id="site-header" class="w-full bg-[#fdf9f6] border-b border-[#d3c3bd]"></header>
+
+  <!-- Checkout Canvas -->
+  <main class="flex-grow w-full max-w-5xl mx-auto px-4 md:px-8 py-8 md:py-16">
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-16">
+
+      <!-- Left Column: Customer Details Form (Screenshot 2) -->
+      <section class="w-full lg:w-7/12 order-2 lg:order-1">
+        <div id="checkout-form-errors"></div>
+
+        <form id="checkout-step-1-form" class="space-y-8">
+          <!-- Section 1: Contact Details -->
+          <div>
+            <h1 class="font-serif text-2xl md:text-3xl text-[#25160e] font-bold mb-1">Contact Details</h1>
+            <p class="font-sans text-xs text-[#4f4540] mb-6">Where should we send your receipt and updates?</p>
+
+            <div class="space-y-4">
+              <div>
+                <label for="email" class="sr-only">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Email Address *"
+                  class="input-underline w-full font-sans text-sm text-[#1c1b1a]" />
+              </div>
+              <div>
+                <label for="mobile" class="sr-only">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" required placeholder="Mobile Number *"
+                  class="input-underline w-full font-sans text-sm text-[#1c1b1a]" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Shipping Address -->
+          <div class="pt-4">
+            <h2 class="font-serif text-xl md:text-2xl text-[#25160e] font-bold mb-6">Shipping Address</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <!-- Full Name -->
+              <div class="col-span-1 md:col-span-2">
+                <label for="fullName" class="sr-only">Full Name</label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Full Name *"
+                  class="input-underline w-full font-sans text-sm text-[#1c1b1a]" />
+              </div>
+
+              <!-- Address Line -->
+              <div class="col-span-1 md:col-span-2">
+                <label for="address" class="sr-only">Address</label>
+                <input type="text" id="address" name="address" required
+                  placeholder="Address (House No, Building, Street, Area) *"
+                  class="input-underline w-full font-sans text-sm text-[#1c1b1a]" />
+              </div>
+
+              <!-- City -->
+              <div>
+                <label for="city" class="sr-only">City</label>
+                <input type="text" id="city" name="city" required placeholder="City *"
+                  class="input-underline w-full font-sans text-sm text-[#1c1b1a]" />
+              </div>
+
+              <!-- State Dropdown -->
+              <div class="relative">
+                <label for="state" class="sr-only">State</label>
+                <select id="state" name="state" required
+                  class="input-underline w-full font-sans text-sm text-[#4f4540] appearance-none bg-transparent cursor-pointer">
+                  <option value="" disabled selected>State *</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Delhi NCR">Delhi NCR</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="West Bengal">West Bengal</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Other">Other State / UT</option>
+                </select>
+                <span
+                  class="material-symbols-outlined absolute right-2 top-3 pointer-events-none text-[#81756f] text-base">expand_more</span>
+              </div>
+
+              <!-- Pincode -->
+              <div class="col-span-1 md:col-span-2">
+                <label for="pincode" class="sr-only">Pincode</label>
+                <input type="text" id="pincode" name="pincode" pattern="[0-9]{6}" required placeholder="Pincode *"
+                  class="input-underline w-full font-sans text-sm text-[#1c1b1a]" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Button (Screenshot 2) -->
+          <div class="pt-4">
+            <button type="submit"
+              class="w-full py-4 bg-[#3c2a21] hover:bg-[#25160e] text-white font-sans text-xs font-bold tracking-widest uppercase rounded transition-colors shadow-sm flex items-center justify-center gap-2">
+              <span>CONTINUE TO ORDER</span>
+              <span class="material-symbols-outlined text-base">arrow_forward</span>
+            </button>
+          </div>
+
+          <!-- Encrypted Checkout Note (Screenshot 2) -->
+          <div class="flex items-center justify-center gap-1.5 text-xs text-[#81756f] pt-2">
+            <span class="material-symbols-outlined text-sm">lock</span>
+            <span>Secure Encrypted Checkout</span>
+          </div>
+        </form>
+      </section>
+
+      <!-- Right Column: Order Summary (Screenshot 2) -->
+      <aside class="w-full lg:w-5/12 order-1 lg:order-2">
+        <div class="bg-[#f7f3f0] rounded-lg border border-[#d3c3bd] p-6 md:p-8 sticky top-8">
+          <h2 class="font-serif text-xl font-bold text-[#25160e] mb-4 border-b border-[#d3c3bd] pb-3">Order Summary</h2>
+
+          <!-- Products Summary List -->
+          <div id="step1-items-summary" class="divide-y divide-[#d3c3bd]/50 mb-6 max-h-80 overflow-y-auto">
+            <!-- Populated dynamically -->
+          </div>
+
+          <!-- Subtotal & Shipping Rows -->
+          <div class="space-y-3 font-sans text-xs md:text-sm text-[#4f4540] border-t border-[#d3c3bd] pt-4 mb-4">
+            <div class="flex justify-between">
+              <span>Subtotal</span>
+              <span id="step1-subtotal" class="font-semibold text-[#1c1b1a]">₹0</span>
+            </div>
+            <div class="flex justify-between">
+              <span>Shipping</span>
+              <span style="color: #16a34a; font-weight: 700;">FREE
+              </span>
+            </div>
+          </div>
+
+          <!-- Total Row (Screenshot 2) -->
+          <div class="flex justify-between items-baseline pt-4 border-t border-[#d3c3bd]">
+            <span class="font-serif text-lg font-bold text-[#25160e]">Total</span>
+            <div class="flex items-baseline gap-1.5">
+              <span class="font-sans text-xs text-[#4f4540] uppercase">INR</span>
+              <span id="step1-total" class="font-serif text-2xl font-bold text-[#25160e]">₹0</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Checkout Simple Footer (Screenshot 2) -->
+  <footer
+    class="w-full py-8 mt-auto bg-[#f7f3f0] border-t border-[#d3c3bd] flex flex-col items-center gap-2 px-4 text-center">
+    <div class="font-serif italic text-xl text-[#25160e]">Melloura Chocolates</div>
+    <div class="flex gap-4 text-xs text-[#4f4540]">
+      <a href="#" class="hover:text-[#25160e]">Privacy Policy</a>
+      <a href="#" class="hover:text-[#25160e]">Terms of Service</a>
+      <a href="#" class="hover:text-[#25160e]">Shipping Info</a>
+    </div>
+    <div class="text-[11px] text-[#81756f] mt-1">
+      © 2024 Melloura Chocolates. Secure Encrypted Checkout.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/data/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

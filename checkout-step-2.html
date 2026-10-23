@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Review Your Order - Step 2 - Melloura Chocolates</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#25160e',
+            'primary-container': '#3c2a21',
+            secondary: '#885210',
+            'secondary-container': '#fdb56c',
+            tertiary: '#735c00',
+            'tertiary-container': '#cca730',
+            background: '#fdf9f6',
+            surface: '#fdf9f6',
+            'surface-container-low': '#f7f3f0',
+            'surface-container': '#f1edea',
+            'surface-container-high': '#ebe7e4',
+            'surface-container-highest': '#e5e2df',
+            'on-surface': '#1c1b1a',
+            'on-surface-variant': '#4f4540',
+            outline: '#81756f',
+            'outline-variant': '#d3c3bd'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="checkout-step-2"
+  class="bg-[#fdf9f6] text-[#1c1b1a] antialiased selection:bg-[#fdb56c] selection:text-[#25160e] min-h-screen flex flex-col">
+
+  <!-- Slim Transactional Header with Centered Brand (Screenshot 5) -->
+  <header
+    class="relative w-full bg-[#fdf9f6] border-b border-[#d3c3bd] h-20 flex items-center justify-between px-4 md:px-12">
+    <a href="checkout-step-1.html"
+      class="p-2 text-[#25160e] hover:text-[#885210] transition-colors flex items-center gap-1 font-sans text-xs tracking-wider uppercase z-10">
+      <span class="material-symbols-outlined text-lg">arrow_back</span>
+      <span class="hidden sm:inline">Back</span>
+    </a>
+
+    <!-- Exact Center Brand Name -->
+    <div class="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 text-center pointer-events-auto z-20">
+      <a href="index.html"
+        class="font-serif italic text-2xl md:text-3xl text-[#25160e] hover:opacity-90 transition-opacity whitespace-nowrap">
+        Melloura Chocolates
+      </a>
+    </div>
+
+    <div class="flex items-center gap-1.5 text-[#25160e] z-10">
+      <span class="material-symbols-outlined text-base text-[#885210]">lock</span>
+      <span class="font-sans text-[11px] tracking-widest uppercase hidden sm:inline text-[#4f4540]">Step 2 of 2</span>
+    </div>
+  </header>
+
+  <!-- Checkout Canvas -->
+  <main class="flex-grow w-full max-w-[1280px] mx-auto px-4 md:px-12 py-8 md:py-14">
+    <div class="flex flex-col lg:flex-row gap-8 lg:gap-14">
+
+      <!-- Left Column: Review Order Details (Screenshot 5) -->
+      <div class="w-full lg:w-2/3 flex flex-col gap-8">
+        <div>
+          <h1 class="font-serif text-3xl md:text-4xl text-[#25160e] font-bold mb-1">Review Your Order</h1>
+          <p class="font-sans text-xs md:text-sm text-[#4f4540]">Step 2 of 2. Please confirm your details before placing
+            the order via WhatsApp.</p>
+        </div>
+
+        <!-- Bento Summary Cards: Contact & Address (Screenshot 5) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+          <!-- Contact Details Card -->
+          <div class="bg-[#f7f3f0] p-5 rounded-lg border border-[#ebe7e4] hover:border-[#d3c3bd] transition-colors">
+            <div class="flex items-center justify-between mb-3">
+              <h2
+                class="font-sans text-xs font-semibold text-[#4f4540] flex items-center gap-1.5 uppercase tracking-wider">
+                <span class="material-symbols-outlined text-base">person</span>
+                <span>CONTACT DETAILS</span>
+              </h2>
+              <a href="checkout-step-1.html" class="text-xs font-semibold text-[#885210] hover:underline">Edit</a>
+            </div>
+            <p id="review-customer-name" class="font-sans text-sm font-semibold text-[#1c1b1a]">Customer Name</p>
+            <p id="review-customer-email" class="font-sans text-xs text-[#4f4540] mt-1">mellourachocolates@gmail.com</p>
+            <p id="review-customer-phone" class="font-sans text-xs text-[#4f4540] mt-0.5">+91 9624594839</p>
+          </div>
+
+          <!-- Shipping Address Card -->
+          <div class="bg-[#f7f3f0] p-5 rounded-lg border border-[#ebe7e4] hover:border-[#d3c3bd] transition-colors">
+            <div class="flex items-center justify-between mb-3">
+              <h2
+                class="font-sans text-xs font-semibold text-[#4f4540] flex items-center gap-1.5 uppercase tracking-wider">
+                <span class="material-symbols-outlined text-base">local_shipping</span>
+                <span>SHIPPING ADDRESS</span>
+              </h2>
+              <a href="checkout-step-1.html" class="text-xs font-semibold text-[#885210] hover:underline">Edit</a>
+            </div>
+            <p id="review-shipping-address" class="font-sans text-xs text-[#4f4540] leading-relaxed">
+              Street address<br>City, State, Pincode
+            </p>
+          </div>
+        </div>
+
+        <!-- Items in Your Cart Section (Screenshot 5) -->
+        <div>
+          <h3 class="font-serif text-xl font-bold text-[#25160e] border-b border-[#d3c3bd] pb-3 mb-4">Items in your cart
+          </h3>
+          <div id="review-cart-items" class="divide-y divide-[#d3c3bd]/50">
+            <!-- Populated dynamically -->
+          </div>
+        </div>
+
+        <!-- Gift Message Section (Screenshot 5) -->
+        <div class="bg-[#f1edea] p-5 rounded-lg border border-[#d3c3bd]">
+          <div class="flex items-center justify-between mb-2">
+            <h3 class="font-sans text-xs font-bold text-[#4f4540] uppercase tracking-wider flex items-center gap-1.5">
+              <span class="material-symbols-outlined text-base">redeem</span>
+              <span>GIFT MESSAGE (OPTIONAL)</span>
+            </h3>
+            <button onclick="document.getElementById('edit-gift-section').classList.toggle('hidden')"
+              class="text-xs text-[#885210] font-semibold hover:underline">
+              Edit
+            </button>
+          </div>
+          <p id="review-gift-message-text" class="font-sans text-xs text-[#1c1b1a] italic">
+            "Happy Anniversary! Enjoy the chocolates."
+          </p>
+          <div id="edit-gift-section" class="hidden mt-3 pt-3 border-t border-[#d3c3bd]/60">
+            <textarea id="review-gift-message-input" rows="2" placeholder="Write or update your gift note here..."
+              class="w-full p-2.5 bg-white border border-[#d3c3bd] rounded text-xs text-[#1c1b1a] focus:outline-none focus:border-[#25160e] mb-2"></textarea>
+            <button
+              onclick="MellouraCart.setGiftMessage(document.getElementById('review-gift-message-input').value); document.getElementById('review-gift-message-text').textContent = document.getElementById('review-gift-message-input').value ? '"' + document.getElementById('
+              review-gift-message-input').value + '"' : 'None' ;
+              document.getElementById('edit-gift-section').classList.add('hidden'); MellouraCart.showToast('Gift note
+              updated');" class="px-4 py-1.5 bg-[#25160e] text-white text-xs rounded hover:bg-[#3c2a21]">
+              Save
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right Column: Order Summary & WhatsApp Button (Screenshot 5) -->
+      <aside class="w-full lg:w-1/3">
+        <div
+          class="sticky top-8 bg-white border border-[#d3c3bd] rounded-lg p-6 md:p-8 tonal-shadow flex flex-col gap-5">
+          <h3 class="font-serif text-xl font-bold text-[#25160e] border-b border-[#d3c3bd] pb-3">Order Summary</h3>
+
+          <!-- Breakdown -->
+          <div class="space-y-3 font-sans text-xs md:text-sm text-[#4f4540]">
+            <div class="flex justify-between">
+              <span id="review-summary-subtotal-count">Subtotal</span>
+              <span id="review-summary-subtotal" class="font-semibold text-[#1c1b1a]">₹0</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="flex items-center gap-1">Shipping <span class="material-symbols-outlined text-xs cursor-help"
+                  title="Standard Insulated Shipping">info</span></span>
+              <span id="review-summary-shipping" class="font-semibold text-[#1c1b1a]">₹0</span>
+            </div>
+
+            <!-- Applied Coupon Row -->
+            <div id="review-coupon-row" class="flex justify-between items-center text-[#885210] hidden">
+              <span class="flex items-center gap-1">
+                <span class="material-symbols-outlined text-sm">local_offer</span>
+                <span id="review-coupon-label">WELCOME10</span>
+              </span>
+              <span id="review-coupon-discount" class="font-semibold">-₹0</span>
+            </div>
+
+
+
+            <!-- Coupon Code Input Box -->
+            <form id="review-coupon-form" class="pt-3 border-t border-[#d3c3bd]/60 flex gap-2">
+              <input type="text" id="review-coupon-input" placeholder="Coupon (e.g. WELCOME10)"
+                class="w-full bg-[#fdf9f6] border border-[#d3c3bd] rounded px-3 py-2 text-xs font-sans text-[#1c1b1a] uppercase tracking-wider focus:outline-none focus:border-[#25160e]" />
+              <button type="submit"
+                class="px-4 py-2 bg-[#25160e] text-white text-xs font-bold uppercase tracking-wider rounded hover:bg-[#3c2a21] transition-colors">
+                Apply
+              </button>
+            </form>
+
+            <!-- Total (Screenshot 5) -->
+            <div class="border-t border-[#d3c3bd] pt-4 flex justify-between items-baseline">
+              <span class="font-serif text-lg font-bold text-[#25160e]">Total</span>
+              <span id="review-summary-total" class="font-serif text-2xl font-bold text-[#25160e]">₹0</span>
+            </div>
+
+            <!-- WhatsApp Primary Action Button (Screenshot 5) -->
+            <button id="btn-confirm-order-whatsapp"
+              class="w-full bg-[#25D366] hover:bg-[#20bd59] text-white font-sans text-xs font-bold tracking-wider py-4 px-4 rounded transition-all shadow-md flex items-center justify-center gap-2 active:scale-98 uppercase">
+              <span class="material-symbols-outlined text-xl fill-1">chat</span>
+              <span>CONFIRM & ORDER ON WHATSAPP</span>
+            </button>
+
+            <p class="font-sans text-[11px] text-[#81756f] text-center flex items-center justify-center gap-1">
+              <span class="material-symbols-outlined text-xs">lock</span>
+              <span>Secure checkout. You will not be charged yet.</span>
+            </p>
+          </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Checkout Footer (Screenshot 5) -->
+  <footer
+    class="w-full py-8 mt-auto bg-[#f7f3f0] border-t border-[#d3c3bd] flex flex-col items-center gap-2 px-4 text-center">
+    <div class="font-serif text-xl font-bold text-[#25160e]">Melloura Chocolates</div>
+    <div class="flex gap-4 text-xs text-[#4f4540]">
+      <a href="#" class="hover:text-[#25160e]">Privacy Policy</a>
+      <a href="#" class="hover:text-[#25160e]">Terms of Service</a>
+      <a href="#" class="hover:text-[#25160e]">Shipping Info</a>
+    </div>
+    <div class="text-[11px] text-[#81756f] mt-1">
+      © 2024 Melloura Chocolates. Secure Encrypted Checkout.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/data/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

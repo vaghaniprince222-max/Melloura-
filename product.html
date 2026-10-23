@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biscoff Bliss - Melloura Chocolates</title>
+  <meta name="description"
+    content="Belgian chocolate truffle layered with luscious Biscoff spread, crisp caramelized biscuit crumble and a delicate cinnamon finish." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#25160e',
+            'primary-container': '#3c2a21',
+            secondary: '#885210',
+            'secondary-container': '#fdb56c',
+            tertiary: '#735c00',
+            'tertiary-container': '#cca730',
+            background: '#fdf9f6',
+            surface: '#fdf9f6',
+            'surface-container-low': '#f7f3f0',
+            'surface-container': '#f1edea',
+            'surface-container-high': '#ebe7e4',
+            'surface-container-highest': '#e5e2df',
+            'on-surface': '#1c1b1a',
+            'on-surface-variant': '#4f4540',
+            outline: '#81756f',
+            'outline-variant': '#d3c3bd'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="product"
+  class="bg-[#fdf9f6] text-[#1c1b1a] antialiased selection:bg-[#fdb56c] selection:text-[#25160e] pt-20 md:pt-24 pb-20 md:pb-0">
+
+  <!-- Slim Sticky Header (Screenshot 1) -->
+  <header id="site-header"
+    class="fixed top-0 left-0 w-full z-40 bg-[#fdf9f6]/95 backdrop-blur-md border-b border-[#d3c3bd]/60 shadow-[0px_4px_20px_rgba(37,22,14,0.04)] transition-all duration-300">
+  </header>
+
+  <!-- Product Detail Section (Screenshot 1) -->
+  <main class="w-full max-w-[1280px] mx-auto px-4 md:px-12 py-8 md:py-16">
+    <div class="flex flex-col md:flex-row gap-8 lg:gap-16 mb-20">
+
+      <!-- Left Column: Gallery (55%) -->
+      <div class="md:w-[55%] flex flex-col gap-4">
+        <!-- Main Hero Image -->
+        <div class="relative w-full aspect-[4/5] bg-[#f7f3f0] rounded overflow-hidden border border-[#d3c3bd]/50 group">
+          <img id="main-product-image"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoApxWqFEKFQS8BfIlSsIRYxEfJtPvGXHGvWaNSXGW0TdafulHDYa2K8ZxnNMjXCqiyHTuSlZf3b1S9Ci8W69zgMcxXLurHnZtOw2o-KQooP8pj8jM5cPoQ6tXiOJawOE6AAyn3l2MD9b97Z0WR3RFJTtgesHlyS9cWzi7_ZDpDrIoMrptYrbXQu5CwFMScvvhxYHqGpW1ZczlQn7tDq7SPJaZH-MVTGJYYh5uQex_jAAopNzLxu0o"
+            alt="Biscoff Bliss"
+            class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105 cursor-zoom-in" />
+        </div>
+
+        <!-- Thumbnail Gallery Underneath -->
+        <div id="product-thumbnails-container" class="flex gap-3 md:gap-4 overflow-x-auto hide-scrollbar pb-2">
+          <!-- Populated dynamically by app.js -->
+        </div>
+      </div>
+
+      <!-- Right Column: Product Info (45%) -->
+      <div class="md:w-[45%] flex flex-col justify-start pt-2">
+        <!-- Badge -->
+        <div class="mb-2">
+          <span id="product-badge"
+            class="bg-[#fdb56c] text-[#774401] text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-xs inline-block">
+            BESTSELLER
+          </span>
+        </div>
+
+        <!-- Product Title -->
+        <h1 id="product-title" class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-[#25160e] mb-3">
+          Biscoff Bliss
+        </h1>
+
+        <!-- Stars & Reviews -->
+        <div class="flex items-center gap-2 mb-4">
+          <div class="flex text-[#cca730]">
+            <span class="material-symbols-outlined text-[16px] fill-1">star</span>
+            <span class="material-symbols-outlined text-[16px] fill-1">star</span>
+            <span class="material-symbols-outlined text-[16px] fill-1">star</span>
+            <span class="material-symbols-outlined text-[16px] fill-1">star</span>
+            <span class="material-symbols-outlined text-[16px] fill-1">star</span>
+          </div>
+          <span id="product-rating-text" class="text-xs text-[#4f4540] font-sans hover:underline cursor-pointer">
+            4.9 (124 reviews)
+          </span>
+        </div>
+
+        <!-- Price & Discount Tag -->
+        <div class="flex items-baseline gap-3 mb-6">
+          <span id="product-price" class="font-serif text-2xl md:text-3xl font-bold text-[#25160e]">₹499</span>
+          <span id="product-compare-price" class="font-sans text-sm text-[#81756f] line-through">₹619</span>
+          <span id="product-discount-badge"
+            class="font-sans text-xs text-[#ba1a1a] font-bold tracking-wider uppercase">20% OFF</span>
+        </div>
+
+        <!-- Description -->
+        <p id="product-description" class="font-sans text-xs md:text-sm text-[#4f4540] leading-relaxed mb-8">
+          Belgian chocolate truffle layered with luscious Biscoff spread, crisp caramelized biscuit crumble and a
+          delicate cinnamon finish.
+        </p>
+
+        <!-- Actions -->
+        <div class="flex flex-col gap-3 mb-8">
+          <div class="flex gap-3">
+            <!-- Quantity Selector -->
+            <div class="flex items-center border border-[#d3c3bd] rounded bg-white px-3 w-32 justify-between">
+              <button onclick="updateDetailQuantity(-1)"
+                class="p-1.5 text-[#4f4540] hover:text-[#25160e] transition-colors" aria-label="Decrease quantity">
+                <span class="material-symbols-outlined text-sm">remove</span>
+              </button>
+              <span id="product-qty-display" class="font-sans text-sm font-semibold text-[#25160e]">1</span>
+              <button onclick="updateDetailQuantity(1)"
+                class="p-1.5 text-[#4f4540] hover:text-[#25160e] transition-colors" aria-label="Increase quantity">
+                <span class="material-symbols-outlined text-sm">add</span>
+              </button>
+            </div>
+
+            <!-- Add To Cart Button -->
+            <button onclick="handleDetailAddToCart()"
+              class="flex-grow py-3.5 px-6 bg-[#25160e] text-white font-sans text-xs font-bold tracking-wider uppercase rounded hover:bg-[#3c2a21] transition-colors shadow-sm flex items-center justify-center gap-2">
+              <span id="btn-add-to-cart-text">ADD TO CART - ₹499</span>
+            </button>
+          </div>
+
+          <!-- Buy It Now Button -->
+          <button onclick="handleDetailBuyNow()"
+            class="w-full py-3.5 bg-[#fdb56c] text-[#774401] font-sans text-xs font-bold tracking-wider uppercase rounded hover:bg-[#e09b55] transition-colors shadow-sm">
+            BUY IT NOW
+          </button>
+        </div>
+
+        <!-- 4 Trust Badges (Screenshot 1) -->
+        <div class="grid grid-cols-2 gap-y-5 gap-x-4 py-6 border-y border-[#d3c3bd] mb-8">
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] flex-shrink-0">
+              <span class="material-symbols-outlined text-base">diamond</span>
+            </div>
+            <span class="font-sans text-[11px] font-semibold tracking-wider text-[#25160e] uppercase">PREMIUM
+              CHOCOLATE</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] flex-shrink-0">
+              <span class="material-symbols-outlined text-base">eco</span>
+            </div>
+            <span class="font-sans text-[11px] font-semibold tracking-wider text-[#25160e] uppercase">100%
+              VEGETARIAN</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] flex-shrink-0">
+              <span class="material-symbols-outlined text-base">health_and_safety</span>
+            </div>
+            <span class="font-sans text-[11px] font-semibold tracking-wider text-[#25160e] uppercase">NO
+              PRESERVATIVES</span>
+          </div>
+
+          <div class="flex items-center gap-3">
+            <div
+              class="w-8 h-8 rounded-full bg-[#f1edea] flex items-center justify-center text-[#885210] flex-shrink-0">
+              <span class="material-symbols-outlined text-base">back_hand</span>
+            </div>
+            <span class="font-sans text-[11px] font-semibold tracking-wider text-[#25160e] uppercase">HANDCRAFTED</span>
+          </div>
+        </div>
+
+        <!-- Expandable Accordions (Screenshot 1) -->
+        <div class="flex flex-col divide-y divide-[#d3c3bd]">
+          <!-- Ingredients & Allergens -->
+          <div>
+            <button onclick="MellouraUI.toggleAccordion('acc-ingredients')"
+              class="w-full flex justify-between items-center py-4 text-left group">
+              <span
+                class="font-sans text-xs font-bold tracking-widest text-[#25160e] uppercase group-hover:text-[#885210] transition-colors">
+                INGREDIENTS & ALLERGENS
+              </span>
+              <span id="icon-acc-ingredients"
+                class="material-symbols-outlined text-base text-[#81756f] group-hover:text-[#885210] transition-transform">add</span>
+            </button>
+            <div id="acc-ingredients" class="accordion-content font-sans text-xs text-[#4f4540] leading-relaxed">
+              <p id="acc-ingredients-text">Premium Belgian dark chocolate (54%), Biscoff spread, crushed caramelized
+                biscuits, fresh dairy cream, unsalted butter, sea salt, ground cinnamon. Contains dairy, gluten, and
+                soy.</p>
+            </div>
+          </div>
+
+          <!-- Delivery & Shipping -->
+          <div>
+            <button onclick="MellouraUI.toggleAccordion('acc-delivery')"
+              class="w-full flex justify-between items-center py-4 text-left group">
+              <span
+                class="font-sans text-xs font-bold tracking-widest text-[#25160e] uppercase group-hover:text-[#885210] transition-colors">
+                DELIVERY & SHIPPING
+              </span>
+              <span id="icon-acc-delivery"
+                class="material-symbols-outlined text-base text-[#81756f] group-hover:text-[#885210] transition-transform">add</span>
+            </button>
+            <div id="acc-delivery" class="accordion-content font-sans text-xs text-[#4f4540] leading-relaxed">
+              <p id="acc-delivery-text">Ships in insulated packaging with frozen gel packs to preserve pristine texture.
+                Standard delivery in 3-5 business days across India.</p>
+            </div>
+          </div>
+
+          <!-- Storage Information -->
+          <div>
+            <button onclick="MellouraUI.toggleAccordion('acc-storage')"
+              class="w-full flex justify-between items-center py-4 text-left group">
+              <span
+                class="font-sans text-xs font-bold tracking-widest text-[#25160e] uppercase group-hover:text-[#885210] transition-colors">
+                STORAGE INFORMATION
+              </span>
+              <span id="icon-acc-storage"
+                class="material-symbols-outlined text-base text-[#81756f] group-hover:text-[#885210] transition-transform">add</span>
+            </button>
+            <div id="acc-storage" class="accordion-content font-sans text-xs text-[#4f4540] leading-relaxed">
+              <p id="acc-storage-text">Store in a cool, dry place between 15°C - 20°C. Avoid direct sunlight and do not
+                refrigerate immediately as it may alter the crystalline texture.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- "You may also indulge in" Section (Screenshot 1) -->
+    <section class="mt-16 md:mt-24 pt-12 border-t border-[#d3c3bd]">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="font-serif text-2xl md:text-3xl text-[#25160e] font-bold">You may also indulge in</h2>
+        <a href="shop.html"
+          class="font-sans text-xs font-bold tracking-widest text-[#885210] uppercase hover:underline underline-offset-4">
+          VIEW ALL
+        </a>
+      </div>
+
+      <!-- 4-Column Grid (Screenshot 1) -->
+      <div id="recommended-products-grid" class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"></div>
+    </section>
+  </main>
+
+  <!-- Mobile Sticky Purchase Bar (Screenshot 1) -->
+  <div
+    class="md:hidden fixed bottom-0 left-0 w-full bg-white border-t border-[#d3c3bd] p-3 px-4 flex items-center justify-between z-30 shadow-lg">
+    <div>
+      <span class="text-[10px] text-[#4f4540] uppercase font-semibold block truncate max-w-[140px]">Biscoff Bliss</span>
+      <span class="font-serif text-base font-bold text-[#25160e]">₹499</span>
+    </div>
+    <div class="flex gap-2">
+      <button onclick="handleDetailAddToCart()"
+        class="px-5 py-2.5 bg-[#25160e] text-white text-xs font-bold tracking-wider uppercase rounded">
+        Add to Cart
+      </button>
+      <button onclick="handleDetailBuyNow()"
+        class="px-4 py-2.5 bg-[#fdb56c] text-[#774401] text-xs font-bold tracking-wider uppercase rounded">
+        Buy Now
+      </button>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer id="site-footer"></footer>
+
+  <!-- Drawer Containers -->
+  <div id="cart-drawer-container"></div>
+  <div id="mobile-menu-container"></div>
+  <div id="search-modal-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/data/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

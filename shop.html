@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All Chocolates & Collections - Melloura Chocolates</title>
+  <meta name="description"
+    content="Browse the full boutique catalogue of handcrafted Belgian chocolates, truffles, kunafa pralines, and luxury gift boxes by Melloura Chocolates." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#25160e',
+            'primary-container': '#3c2a21',
+            secondary: '#885210',
+            'secondary-container': '#fdb56c',
+            tertiary: '#735c00',
+            'tertiary-container': '#cca730',
+            background: '#fdf9f6',
+            surface: '#fdf9f6',
+            'surface-container-low': '#f7f3f0',
+            'surface-container': '#f1edea',
+            'surface-container-high': '#ebe7e4',
+            'surface-container-highest': '#e5e2df',
+            'on-surface': '#1c1b1a',
+            'on-surface-variant': '#4f4540',
+            outline: '#81756f',
+            'outline-variant': '#d3c3bd'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="shop"
+  class="bg-[#fdf9f6] text-[#1c1b1a] antialiased selection:bg-[#fdb56c] selection:text-[#25160e] pt-20 md:pt-24">
+
+  <!-- Slim Sticky Header -->
+  <header id="site-header"
+    class="fixed top-0 left-0 w-full z-40 bg-[#fdf9f6]/95 backdrop-blur-md border-b border-[#d3c3bd]/60 shadow-[0px_4px_20px_rgba(37,22,14,0.04)] transition-all duration-300">
+  </header>
+
+  <!-- Shop Hero Banner -->
+  <section class="relative w-full h-[320px] md:h-[400px] flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <div class="w-full h-full bg-cover bg-center"
+        style="background-image: url('E:\\New folder (3)\\New folder (3)\\images\\Golden Dust Chocolate Truffles.png');">
+      </div>
+      <div class="absolute inset-0 bg-[#25160e]/55 mix-blend-multiply"></div>
+      <div class="absolute inset-0 bg-gradient-to-t from-[#25160e]/80 via-transparent to-black/30"></div>
+    </div>
+
+    <div class="relative z-10 text-center px-4 max-w-2xl mx-auto">
+      <span class="text-[#fdb56c] text-[10px] md:text-xs tracking-[0.3em] font-semibold uppercase block mb-2">Boutique
+        Atelier</span>
+      <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl text-white font-bold mb-3">All Chocolates</h1>
+      <p class="font-sans text-xs md:text-sm text-white/90 font-light leading-relaxed">
+        Explore our master collection of handcrafted Belgian pralines, kunafa bars, truffles, and curated gift boxes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Shop Catalog & Filter Grid -->
+  <main class="w-full py-12 md:py-16 px-4 md:px-12 max-w-[1280px] mx-auto">
+    <!-- Filter Controls & Search -->
+    <div class="flex flex-col lg:flex-row items-center justify-between gap-6 pb-8 border-b border-[#d3c3bd]/60 mb-10">
+      <!-- Search Input -->
+      <div class="relative w-full lg:w-96">
+        <span
+          class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-[#81756f] text-lg">search</span>
+        <input id="shop-search-input" type="text" placeholder="Search creations by flavor, name, or nut..."
+          class="w-full pl-11 pr-4 py-2.5 rounded-full border border-[#d3c3bd] bg-white text-xs font-sans text-[#1c1b1a] focus:outline-none focus:border-[#25160e] transition-colors placeholder-[#81756f]" />
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="flex flex-wrap justify-center gap-2">
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#25160e] text-white border border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="ALL">ALL</button>
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="BESTSELLERS">BESTSELLERS</button>
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="NUTTY">NUTTY</button>
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="KUNAFA">KUNAFA</button>
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="OREO">OREO</button>
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="CARAMEL">CARAMEL</button>
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="COCONUT">COCONUT</button>
+        <button
+          class="shop-category-chip px-5 py-2 rounded-full bg-[#fdf9f6] border border-[#d3c3bd] text-[#1c1b1a] hover:border-[#25160e] transition-colors font-sans text-xs font-semibold tracking-wider cursor-pointer"
+          data-category="GIFTING">GIFTING</button>
+      </div>
+
+      <!-- Sorting -->
+      <div class="flex items-center gap-2 text-xs font-sans text-[#4f4540] flex-shrink-0">
+        <label for="shop-sort-select">Sort by:</label>
+        <select id="shop-sort-select"
+          class="bg-white border border-[#d3c3bd] rounded px-3 py-1.5 text-xs text-[#25160e] focus:outline-none focus:border-[#25160e]">
+          <option value="featured">Featured</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating">Highest Rated</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Status Bar -->
+    <div class="flex justify-between items-center mb-8 text-xs text-[#81756f]">
+      <span id="shop-results-count">Loading chocolates...</span>
+      <span class="flex items-center gap-1 text-[#885210] font-medium">
+        <span class="material-symbols-outlined text-sm">ac_unit</span> Temperature-controlled delivery across India
+      </span>
+    </div>
+
+    <!-- Products Grid -->
+    <div id="shop-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8"></div>
+  </main>
+
+  <!-- Global Footer -->
+  <footer id="site-footer"></footer>
+
+  <!-- Drawer Containers -->
+  <div id="cart-drawer-container"></div>
+  <div id="mobile-menu-container"></div>
+  <div id="search-modal-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>Shop By Occasion
+  <script src="js/data/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

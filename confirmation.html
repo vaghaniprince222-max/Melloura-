@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Order Confirmation - Melloura Chocolates</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#25160e',
+            'primary-container': '#3c2a21',
+            secondary: '#885210',
+            'secondary-container': '#fdb56c',
+            tertiary: '#735c00',
+            'tertiary-container': '#cca730',
+            background: '#fdf9f6',
+            surface: '#fdf9f6',
+            'surface-container-low': '#f7f3f0',
+            'surface-container': '#f1edea',
+            'surface-container-high': '#ebe7e4',
+            'surface-container-highest': '#e5e2df',
+            'on-surface': '#1c1b1a',
+            'on-surface-variant': '#4f4540',
+            outline: '#81756f',
+            'outline-variant': '#d3c3bd'
+          },
+          fontFamily: {
+            serif: ['Playfair Display', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body data-page="confirmation"
+  class="bg-[#fdf9f6] text-[#1c1b1a] antialiased selection:bg-[#fdb56c] selection:text-[#25160e] min-h-screen flex flex-col pt-20">
+
+  <!-- Slim Header with exact centered brand name -->
+  <header class="fixed top-0 left-0 w-full z-40 bg-[#fdf9f6] border-b border-[#d3c3bd] py-5">
+    <div class="max-w-[1280px] mx-auto px-4 text-center">
+      <a href="index.html" class="font-serif italic text-2xl md:text-3xl text-[#25160e]">
+        Melloura Chocolates
+      </a>
+    </div>
+  </header>
+
+  <!-- Confirmation Content -->
+  <main class="flex-grow w-full max-w-3xl mx-auto px-4 py-12">
+    <!-- Success Banner -->
+    <div class="bg-white rounded-lg border border-[#d3c3bd] p-8 md:p-12 shadow-sm text-center mb-8">
+      <div class="w-16 h-16 bg-[#25D366]/10 text-[#25D366] rounded-full flex items-center justify-center mx-auto mb-4">
+        <span class="material-symbols-outlined text-3xl fill-1">check_circle</span>
+      </div>
+      <span class="text-xs uppercase tracking-widest font-semibold text-[#885210] block mb-1">WhatsApp Order
+        Placed</span>
+      <h1 class="font-serif text-3xl md:text-4xl text-[#25160e] font-bold mb-2">Thank You for Your Order</h1>
+      <p class="font-sans text-xs md:text-sm text-[#4f4540] max-w-md mx-auto mb-6">
+        Your order details have been prepared for WhatsApp Concierge (+91 96245 94839). Our master chocolatiers are
+        preparing your artisanal creations.
+      </p>
+
+      <div
+        class="inline-block px-4 py-2 bg-[#f7f3f0] rounded border border-[#d3c3bd] text-xs font-sans text-[#25160e] mb-8">
+        Order Number: <strong id="conf-order-id" class="font-serif text-sm text-[#885210]">#MEL-892410</strong>
+      </div>
+
+      <!-- Timeline Tracking -->
+      <div class="border-t border-[#d3c3bd]/60 pt-8 max-w-md mx-auto">
+        <h4 class="font-serif text-base font-bold text-[#25160e] mb-6">Delivery Timeline</h4>
+        <div class="flex justify-between items-center relative">
+          <div class="absolute left-6 right-6 top-3 h-0.5 bg-[#d3c3bd] -z-0"></div>
+
+          <div class="flex flex-col items-center z-10">
+            <div class="w-7 h-7 rounded-full bg-[#25160e] text-white flex items-center justify-center text-xs">✓</div>
+            <span class="text-[10px] text-[#25160e] font-semibold mt-2">Placed</span>
+          </div>
+
+          <div class="flex flex-col items-center z-10">
+            <div class="w-7 h-7 rounded-full bg-[#25D366] text-white flex items-center justify-center text-xs">✓</div>
+            <span class="text-[10px] text-[#25160e] font-semibold mt-2">WhatsApp Sent</span>
+          </div>
+
+          <div class="flex flex-col items-center z-10">
+            <div class="w-7 h-7 rounded-full bg-[#885210] text-white flex items-center justify-center text-xs">3</div>
+            <span class="text-[10px] text-[#885210] font-semibold mt-2">Handcrafting</span>
+          </div>
+
+          <div class="flex flex-col items-center z-10">
+            <div
+              class="w-7 h-7 rounded-full bg-white border-2 border-[#d3c3bd] text-[#81756f] flex items-center justify-center text-xs">
+              4</div>
+            <span class="text-[10px] text-[#81756f] mt-2">Cold Delivery</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Order Details Summary Card -->
+    <div id="print-invoice" class="bg-white rounded-lg border border-[#d3c3bd] p-6 md:p-8 shadow-sm mb-8 space-y-6">
+      <h3 class="font-serif text-lg font-bold text-[#25160e] border-b border-[#d3c3bd] pb-3">Order Details</h3>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans text-[#4f4540]">
+        <div>
+          <span class="font-semibold text-[#25160e] block mb-1">Customer:</span>
+          <p id="conf-customer-name">Name</p>
+          <p id="conf-customer-email">Email</p>
+          <p id="conf-customer-phone">Phone</p>
+        </div>
+        <div>
+          <span class="font-semibold text-[#25160e] block mb-1">Shipping Destination:</span>
+          <p id="conf-shipping-address">Address details</p>
+        </div>
+      </div>
+
+      <div class="border-t border-[#d3c3bd]/60 pt-4">
+        <span class="font-semibold text-xs text-[#25160e] block mb-3">Items Summary:</span>
+        <div id="conf-items-list" class="space-y-2">
+          <!-- Populated dynamically -->
+        </div>
+      </div>
+
+      <div class="border-t border-[#d3c3bd] pt-4 flex justify-between items-baseline">
+        <span class="font-serif text-base font-bold text-[#25160e]">Final Amount:</span>
+        <span id="conf-order-total" class="font-serif text-xl font-bold text-[#885210]">₹0</span>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a href="index.html"
+        class="px-8 py-3.5 bg-[#25160e] text-white text-center font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#3c2a21] transition-colors">
+        Return to Home
+      </a>
+      <button type="button" onclick="window.print()"
+        class="no-print px-8 py-3.5 border border-[#25160e] text-[#25160e] font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#f1edea] transition-colors">
+        PRINT RECEIPT
+      </button>
+      <a id="conf-whatsapp-btn" href="https://wa.me/919624594839" target="_blank"
+        class="px-8 py-3.5 bg-[#25D366] text-white text-center font-sans text-xs font-bold tracking-widest uppercase rounded hover:bg-[#20bd59] transition-colors flex items-center justify-center gap-2">
+        <span class="material-symbols-outlined text-base fill-1">chat</span>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </div>
+  </main>
+
+  <!-- Checkout Footer -->
+  <footer
+    class="w-full py-8 mt-auto bg-[#f7f3f0] border-t border-[#d3c3bd] flex flex-col items-center gap-2 px-4 text-center">
+    <div class="font-serif italic text-xl text-[#25160e]">Melloura Chocolates</div>
+    <div class="text-[11px] text-[#81756f]">
+      © 2024 Melloura Chocolates. Crafted with precision.
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/data/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
