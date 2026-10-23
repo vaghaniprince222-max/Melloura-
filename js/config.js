@@ -18,20 +18,9 @@ const MELLOURA_CONFIG = {
   coupons: {
     "WELCOME10": {
       code: "WELCOME10",
-      discountPercent: 10,
-      description: "10% off on your luxury order"
-    },
-
-    "MELLOURA10": {
-      code: "MELLOURA10",
-      discountPercent: 10,
-      description: "10% off on your luxury order"
-    },
-
-    "MELLOURA20": {
-      code: "MELLOURA20",
-      discountPercent: 20,
-      description: "20% off celebration special"
+      discountPercent: 5,
+      description: "5% off on your luxury order"
+    
     }
   }
 };
