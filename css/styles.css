@@ -555,27 +555,121 @@ opacity: 0;
   }
 }
 
-/* Mobile: Fix product card buttons only *////////////
-@media screen and (max-width: 600px) {
-  #home-products-grid .product-card button,
-  #home-products-grid .product-card .add-to-bag {
-    min-width: 0;
-    width: 100%;
-    height: 48px;
-    padding: 8px 6px;
-    font-size: 13px;
-    line-height: 1.2;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
+
+/* MELLOURA: Fix mobile product-card buttons only */
+@media screen and (max-width: 640px) {
+
+  #home-products-grid .product-card .mt-auto {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    min-width: 0 !important;
   }
 
-  #home-products-grid .product-card button svg,
-  #home-products-grid .product-card .add-to-bag svg {
-    width: 16px;
-    height: 16px;
-    flex-shrink: 0;
+  /* Black ADD TO BAG button */
+  #home-products-grid .product-card .mt-auto > button:first-child {
+    flex: 1 1 0% !important;
+    width: auto !important;
+    min-width: 0 !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 4px !important;
+    white-space: nowrap !important;
+    font-size: 9px !important;
+    line-height: 1 !important;
+    letter-spacing: 0.04em !important;
+    gap: 4px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #home-products-grid .product-card .mt-auto > button:first-child
+  .material-symbols-outlined {
+    font-size: 15px !important;
+    flex-shrink: 0 !important;
+  }
+
+  #home-products-grid .product-card .mt-auto > button:first-child
+  span:last-child {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Green WhatsApp button */
+  #home-products-grid .product-card .mt-auto > button:last-child {
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #home-products-grid .product-card .mt-auto > button:last-child
+  .material-symbols-outlined {
+    font-size: 18px !important;
   }
 }
+
+
+/* MELLOURA: Fix mobile product-card buttons only */
+@media screen and (max-width: 640px) {
+
+  #home-products-grid .product-card .mt-auto {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    min-width: 0 !important;
+  }
+
+  /* Black ADD TO BAG button */
+  #home-products-grid .product-card .mt-auto > button:first-child {
+    flex: 1 1 0% !important;
+    width: auto !important;
+    min-width: 0 !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 4px !important;
+    white-space: nowrap !important;
+    font-size: 9px !important;
+    line-height: 1 !important;
+    letter-spacing: 0.04em !important;
+    gap: 4px !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #home-products-grid .product-card .mt-auto > button:first-child
+  .material-symbols-outlined {
+    font-size: 15px !important;
+    flex-shrink: 0 !important;
+  }
+
+  #home-products-grid .product-card .mt-auto > button:first-child
+  span:last-child {
+    white-space: nowrap !important;
+    flex-shrink: 0 !important;
+  }
+
+  /* Green WhatsApp button */
+  #home-products-grid .product-card .mt-auto > button:last-child {
+    flex: 0 0 44px !important;
+    width: 44px !important;
+    min-width: 44px !important;
+    height: 44px !important;
+    min-height: 44px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  #home-products-grid .product-card .mt-auto > button:last-child
+  .material-symbols-outlined {
+    font-size: 18px !important;
+  }
+}
+
