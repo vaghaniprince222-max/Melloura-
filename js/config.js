@@ -20,22 +20,4 @@ const MELLOURA_CONFIG = {
       code: "WELCOME10",
       discountPercent: 5,
       description: "10% off on your luxury order"
-    },
-
-    "MELLOURA10": {
-      code: "MELLOURA10",
-      discountPercent: 10,
-      description: "10% off on your luxury order"
-    },
-
-    "MELLOURA20": {
-      code: "MELLOURA20",
-      discountPercent: 20,
-      description: "20% off celebration special"
     }
-  }
-};
-
-if (typeof module !== "undefined") {
-  module.exports = { MELLOURA_CONFIG, WHATSAPP_NUMBER };
-}
