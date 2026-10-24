@@ -233,8 +233,14 @@ function initProductPage() {
     `).join('');
   }
 
+ 
   // Populate Right Column Details
   setText('product-title', currentDetailProduct.name);
+
+  // Update mobile sticky purchase bar
+  setText('sticky-product-name', currentDetailProduct.name);
+  setText('sticky-product-price', `${MELLOURA_CONFIG.currency}${currentDetailProduct.price}`);
+
   setText('product-badge', currentDetailProduct.badge || 'ARTISANAL');
   setText('product-rating-text', `${currentDetailProduct.rating} (${currentDetailProduct.reviewCount} reviews)`);
   setText('product-price', `${MELLOURA_CONFIG.currency}${currentDetailProduct.price}`);
@@ -242,6 +248,7 @@ function initProductPage() {
   setText('product-discount-badge', currentDetailProduct.discount || '');
   setText('product-description', currentDetailProduct.description || currentDetailProduct.shortDescription);
   setText('btn-add-to-cart-text', `Add to Cart - ${MELLOURA_CONFIG.currency}${currentDetailProduct.price}`);
+
 
   // Populate Accordions
   setText('acc-ingredients-text', currentDetailProduct.ingredients || "Premium single origin cocoa, raw organic inclusions, natural Madagascar vanilla.");
