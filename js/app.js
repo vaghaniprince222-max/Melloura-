@@ -273,13 +273,31 @@ function initProductPage() {
   }
 }
 
+
 function updateDetailQuantity(delta) {
   currentDetailQty = Math.max(1, currentDetailQty + delta);
+
   setText('product-qty-display', currentDetailQty);
+
   if (currentDetailProduct) {
-    setText('btn-add-to-cart-text', `Add to Cart - ${MELLOURA_CONFIG.currency}${currentDetailProduct.price * currentDetailQty}`);
+    const totalPrice = currentDetailProduct.price * currentDetailQty;
+
+    // Update main Add to Cart button
+    setText(
+      'btn-add-to-cart-text',
+      `Add to Cart - ${MELLOURA_CONFIG.currency}${totalPrice}`
+    );
+
+    // Update mobile sticky bar product name and total price
+    setText('sticky-product-name', currentDetailProduct.name);
+    setText(
+      'sticky-product-price',
+      `${MELLOURA_CONFIG.currency}${totalPrice}`
+    );
   }
 }
+
+
 
 function handleDetailAddToCart() {
   if (currentDetailProduct) {
